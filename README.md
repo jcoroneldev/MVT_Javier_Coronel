@@ -6,4 +6,9 @@ Consigna: Crear una web que permite ver los datos de algunos de tus familiares, 
 * Deberá tener un template, una vista y un modelo (como mínimo, pueden usar más)
 * La clase del modelo, deberá guardar mínimo un número, una cadena y una fecha (puede guardar más cosas)
 * Se deberán crear como mínimo 3 familiares
+<<<<<<< HEAD
 * Los familiares se deben ver desde la web.
+=======
+* Los familiares se deben ver desde la web.
+
+>>>>>>> 3cab6278a9a588c0d1362bc18b4cfa8566efe71f
