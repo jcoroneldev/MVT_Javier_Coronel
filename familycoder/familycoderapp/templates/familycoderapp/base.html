@@ -21,7 +21,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Familia</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/jcoroneldev/MVT_Javier_Coronel">Link Github</a></li>
                     </ul>
                         </li>
                     </ul>
@@ -35,7 +35,36 @@
                 <p class="lead">Entrega Nuestro Primer MVT:</p>
                 <p>Consigna: Crear una web que permite ver los datos de  alguno de tus familiares, guardados en una DB.</p>
             </div>
-        
+            <h3>Buscar Familiar:</h3>
+
+            <form action="/familia/" method="get">
+            
+                <input type="text" name="nombre" id="familiar">
+                <p></p>
+                <input type="submit" value="Buscar">
+                
+            </form>
+            
+            <p></p>            
+            {% if familiar %}
+            
+            <h4>Familiar encontrado:</h4>
+            
+            <h5>{{familiar.nombre}} {{familiar.apellido}}</h5>
+            
+            <p></p>
+            <p>DNI: {{familiar.dni}}</p>
+            <p>email : {{familiar.email}}</p>
+            <p>Altura: {{familiar.altura}}</p>
+            <p>Peso : {{familiar.peso}}</p>
+            <p></p>
+
+            {% else %}
+
+            <h4>Familiar no encontrado</h4>
+            
+            {% endif %}
+            <p></p>
         
         </div>
         <!-- Bootstrap core JS-->
